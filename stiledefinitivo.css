@@ -1,0 +1,121 @@
+
+
+
+/***********************/
+/*  FOGLIO DI STILE
+    con tutte le regole che servono
+*/
+/** questo è un commento**/
+html{padding: 0; margin:0;}
+
+body {
+  margin: 0 auto 0 24%;
+  width: 40%;
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  padding: 0;
+}
+
+h1{
+  font-family: 'Adelle basic', georgia, serif;
+  font-size: 12em;
+  line-height: .8em;
+  color: chocolate;
+  text-shadow:2px 3px brown;
+
+}
+
+h2{
+  border-bottom: 1px solid #ccc;
+  margin-top: 48px;
+}
+
+#menu{ 
+  position: fixed;
+  left:8%;
+  top:114px;
+  text-align: right;
+  list-style-type: none;
+  font-family: 'adelle Basic', georgia;
+  padding: 0;
+}
+
+#menu li{
+  margin-top: 3px;
+}
+
+img{max-width: 100%; }
+a{  
+  text-decoration: none;
+  color:#787878;
+  font-weight: bold;
+  }
+
+a:link{}
+a:hover{ color:chocolate;}
+a:visited{color:none;}
+a:active{color:green;}
+p{
+  font-family: georgia;
+  font-size: 1.3em;
+  line-height: 1.625em;
+}
+
+
+
+
+
+
+@media all and (max-width: 1288px) and (min-width: 691px){
+  body{
+    width: 90%;
+    margin: 120px auto 0 auto;
+  }
+
+  h1{
+    font-size: 9em;
+  }
+
+  #menu{
+    left: 0;
+    top:0;
+    background: #efefef;
+    border-bottom: 1px solid #ccc;
+    padding: 4px 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+  }  
+
+  #menu li{
+    display: inline;
+    margin-left: 8px;
+    line-height: 44px;
+
+  }
+
+}
+
+
+
+@media all and (max-width: 691px) {
+  body{
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
+  h1{
+    font-size: 5em;
+  }
+
+  #menu{
+    position: relative;
+    text-align: left;
+    left: 0;
+    top:0;
+  }  
+
+
+}
