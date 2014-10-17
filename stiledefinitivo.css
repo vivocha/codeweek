@@ -1,6 +1,3 @@
-
-
-
 /***********************/
 /*  FOGLIO DI STILE
     con tutte le regole che servono
@@ -22,13 +19,37 @@ h1{
   line-height: .8em;
   color: chocolate;
   text-shadow:2px 3px brown;
-
+  margin-bottom: .1em;
 }
 
 h2{
   border-bottom: 1px solid #ccc;
   margin-top: 48px;
 }
+
+img{
+  max-width: 100%; 
+}
+
+h1 span{
+  color: black;
+  font-size: .52em;
+}
+
+.avatar{
+  width: 21%;
+  margin-right: 4%;
+  float: left;
+}
+
+.introduction{
+  margin-left: 25%;
+  font-family: georgia;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.2em;
+}
+
 
 #menu{ 
   position: fixed;
@@ -44,7 +65,7 @@ h2{
   margin-top: 3px;
 }
 
-img{max-width: 100%; }
+
 a{  
   text-decoration: none;
   color:#787878;
@@ -55,6 +76,7 @@ a:link{}
 a:hover{ color:chocolate;}
 a:visited{color:none;}
 a:active{color:green;}
+
 p{
   font-family: georgia;
   font-size: 1.3em;
@@ -62,7 +84,16 @@ p{
 }
 
 
+.gallery img{
+  float:left;
+  margin: 1% 2% 2% 0;
+  width: 48%;
+}
 
+.gallery img:nth-child(even),.gallery img:last-child{
+  margin-right: 0;
+  margin-left: 2%;
+}
 
 
 
@@ -96,8 +127,6 @@ p{
   }
 
 }
-
-
 
 @media all and (max-width: 691px) {
   body{
